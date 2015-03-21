@@ -9,13 +9,6 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
-<body>
-    <div class="container">
-        <?php include('includes/header.php'); ?>
-        <?php include('includes/home.php'); ?>
-        <?php include('includes/aside.php'); ?>
-        <?php include('includes/footer.php'); ?>
-    </div>
-</body>
-
+<?php include('../includes/header.php'); ?>
+blog view page
 </html>

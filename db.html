@@ -2,22 +2,22 @@ Database Schema
 
 POST TABLE
 ID: blog post id
-User_ID: User id to identify who made the post or left the comment
-Timestamp: Timestamp of when post was made
-Title: Title of blog post
-Category: Category of the blog post
-Content: Text of actual post
+userID: User id to identify who made the post or left the comment
+timestamp: Timestamp of when post was made
+title: Title of blog post
+category: Category of the blog post
+content: Text of actual post
 
 USER TABLE
-ID: ID to match POST User_ID of post table
-Display Name: User alias
-Password: User password
-EMail: User email
+ID: ID to match POST userID of post table
+displayName: User alias
+password: User password
+userEmail: User email
 
 COMMENTS TABLE
 ID: Comment ID
-User_ID: Corresponds with USER TABLE ID
-Post_ID: Corresponds with POST TABLE ID
-Content: Content of comment
-Timestamp: Time comment posted
+userID: Corresponds with USER TABLE ID
+postID: Corresponds with POST TABLE ID
+content: Content of comment
+timestamp: Time comment posted
 
