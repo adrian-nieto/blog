@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
-<?php include('includes/header.php'); ?>
-create post page
+<body class="container">
+    <?php include( 'includes/header.php'); ?> create post page
+</body>
+
 </html>

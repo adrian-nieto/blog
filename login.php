@@ -11,7 +11,7 @@
 
 <body class="container">
     <?php include( 'includes/header.php'); ?>
-    <form class="form-horizontal col-md-6" action="login.php" method="post">
+    <form class="form-horizontal col-md-6" action="loginpage.php" method="post">
         <div class="form-group">
             <label for="inputEmail" class="col-md-2 control-label">Email</label>
             <div class="col-md-10">
@@ -21,7 +21,7 @@
         <div class="form-group">
             <label for="inputPassword" class="col-md-2 control-label">Password</label>
             <div class="col-md-10">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
             </div>
         </div>
         <div class="form-group">
