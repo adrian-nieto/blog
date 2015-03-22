@@ -7,6 +7,8 @@
     <title>Adrian's Blog</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
