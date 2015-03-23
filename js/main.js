@@ -12,33 +12,27 @@ $.ajax({
         }
     }); //end of ajax get.php
     
-}); //end of document ready
-
-
-
-
-
-
-
-/*$('document').ready(function(){
-
-        $("#form_submit_button").click(function(){
-            
-            var form = $('#textareaform');
-            var formdata = new FormData(form[0]);
-            formdata.append('content', tinyMCE.activeEditor.getContent());
+    var mainContent = $('#mainContent');
+    mainContent.on('click', '#readMore', function(){
+        var rowID = $(this).attr('data-id');
         
-            $.ajax({
-                url:'createblog.php',
-                cache: false,
-                method: 'post',
-                dataType: 'text',
-                processData: false,
-                contentType: false,
-                data: formdata,
-                success: function(response){
-                    console.log("send successsful");
+        var blogID = {
+            blogid: rowID
+        }
+        
+        $.ajax({
+           
+            url: 'getblog.php',
+            dataType: 'json',
+            data: blogID,
+            cache: false,
+            method: 'POST',
+            success: function(response){
+                if(response.success){
+                    $(".blogpost").html(response.html);   
                 }
-            }); //end of ajax
-        }); //end of click
-});//end of ready*/
+            }
+        }); //end of ajax
+    }); //end of on handler
+    
+}); //end of document ready
