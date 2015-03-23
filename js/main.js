@@ -13,9 +13,9 @@ $.ajax({
     }); //end of ajax get.php
     
     var mainContent = $('#mainContent');
-    mainContent.on('click', '#readMore', function(){
+    mainContent.on('click', 'a', function(){
         var rowID = $(this).attr('data-id');
-        
+        console.log("click is working");
         var blogID = {
             blogid: rowID
         }

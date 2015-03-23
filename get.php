@@ -1,6 +1,6 @@
 <?php
     $con = mysqli_connect('localhost', 'root', '', 'blog');
-    $sql = 'SELECT * FROM post';
+    $sql = 'SELECT * FROM post ORDER BY id desc';
     $results = mysqli_query($con, $sql);
    
     $outputArray = [];//make an output array
