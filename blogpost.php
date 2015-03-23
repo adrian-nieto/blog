@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <?php include('includes/header.php'); ?>
-        <div class="blogpost">
+        <div class="blogPost">
 
         </div>
         <?php include('includes/aside.php'); ?>

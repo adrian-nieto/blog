@@ -1,6 +1,6 @@
 <?php
     $con = mysqli_connect('localhost', 'root', '', 'blog');
-    $sql = 'SELECT * FROM post ORDER BY id desc';
+    $sql = 'SELECT * FROM post ORDER BY ID desc';
     $results = mysqli_query($con, $sql);
    
     $outputArray = [];//make an output array
@@ -16,7 +16,7 @@
     $timestamp = $post_row['timestamp'];
     $content = $post_row['content']; 
 
-    $html[] = "<div id='container_div' data-user='$userID' data-id='$id'><p class='date'>$timestamp</p><h3 class='title'>$title</h3><p class='category'>$category</p><div class='content'>".nl2br($content)."</div></div><a data-id='$id' id='readMore'>Read more...</a><br>";
+    $html[] = "<div id='container_div' data-user='$userID' data-id='$id'><p class='date'>$timestamp</p><h3 class='title'>$title</h3><p class='category'>$category</p><div class='content'>".nl2br($content)."</div></div><a href='?' data-id='$id' id='readMore'>Read more...</a><br>";
         
     }
 
