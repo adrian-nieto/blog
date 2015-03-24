@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Adrian's Blog</title>
+    <title>Adrian's Blog | Post</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

@@ -1,0 +1,41 @@
+ul > li {
+    display: inline;
+    position: relative;
+    text-align: center;
+}
+
+header > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header > ul {
+    background-color: black;
+    height: 50px;
+    padding-top: 15px;
+}
+
+header > ul > li > a {
+    color: white !important;
+    text-decoration: underline;
+}
+
+footer h4 {
+    text-align: center;
+    color: white;
+}
+footer{
+    background-color: black;
+    height: 50px;
+    padding-top: 5px;
+}
+
+header {
+    margin-bottom: 10%;   
+}
+footer{
+    margin-top: 10%;   
+}
+.date{
+    text-decoration: underline;
+}   

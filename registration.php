@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Adrian's Blog</title>
+    <title>Adrian's Blog | Registration</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
@@ -12,7 +12,7 @@
 
 <body class="container">
     <?php include( 'includes/header.php'); ?>
-    <h3>Sign up!<small>&nbsp;If successful you will be redirected to login page.</small></h3>
+    <h3 class="col-md-12">Sign up!<small>&nbsp;If successful you will be redirected to login page.</small></h3>
     <form class="form-horizontal col-md-6" action="registrationadd.php" method="post">
         <div class="form-group">
             <label for="inputUsername" class="col-md-2 control-label">Username</label>

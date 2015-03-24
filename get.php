@@ -16,7 +16,7 @@
     $timestamp = $post_row['timestamp'];
     $content = $post_row['content']; 
 
-    $html[] = "<div id='container_div' data-user='$userID' data-id='$id'><p class='date'>$timestamp</p><h3 class='title'>$title</h3><p class='category'>$category</p><div class='content'>".nl2br($content)."</div></div><a href='?' data-id='$id' id='readMore'>Read more...</a><br>";
+    $html[] = "<div class='container_div' data-user='$userID' data-id='$id'><p class='date'>$timestamp</p><h3 class='title'>$title</h3><p class='category'>$category</p><div class='content'>".nl2br($content)."</div><a href='?' data-id='$id' id='readMore'>Read more...</a></div><br>";
         
     }
 
