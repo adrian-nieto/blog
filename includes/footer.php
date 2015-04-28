@@ -1,3 +1,7 @@
-<footer class="col-md-12">
-    <h4>Created by Adrian N.</h4>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <p class='text-center'>Created by Adrian N.</p>
+        </div>
+    </div>
 </footer>

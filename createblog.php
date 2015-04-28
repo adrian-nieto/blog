@@ -3,8 +3,8 @@ session_start();
 
 $con = mysqli_connect('localhost', 'root', '', 'blog');
    
-$errorArray = []; //create an array for error messages
-$outputArray = []; //create an array for output
+$errorArray = [];
+$outputArray = [];
 
 if(isset($_POST)){
     $timestamp = time();
@@ -20,11 +20,12 @@ if(isset($_POST)){
 
     if(empty($errorArray)){
         
-        $query = ' INSERT INTO post (`title`, `category`, `content`, `userID`) VALUES (';
-        $query .= '"'.$_POST['title'].'",';
-        $query .= '"'.$_POST['category'].'",';
-        $query .= '"'.$_POST['content'].'",';
-        $query .='"'.$_SESSION['userinfo']['ID'].'");';
+        $query = ' INSERT INTO post (`title`, `category`, `content`, `userID`, `timestamp`) VALUES (';
+        $query .= '"'.htmlentities($_POST['title']).'",';
+        $query .= '"'.htmlentities($_POST['category']).'",';
+        $query .= '"'.htmlentities($_POST['content']).'",';
+        $query .='"'.$_SESSION['userinfo']['ID'].'",';
+        $query .='"'.$timestamp.'");';
         $result = mysqli_query($con, $query);
     
        

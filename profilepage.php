@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
-
+<body>
 <?php include( 'includes/header.php'); ?>
-
+<div class="content col-md-12">
 <form class="form-horizontal col-md-6" action="uploadhandler.php" method="post">
     <div class="form-group">
         <label for="inputUsername" class="col-md-2 control-label">Username</label>
@@ -25,12 +25,10 @@
         </div>
     </div>
 </form>
- 
-
-<form action="profilepage.php" method="post" enctype="multipart/form-data">
+<form class="form-horizontal col-md-6" action="profilepage.php" method="post" enctype="multipart/form-data">
     Select image to upload as new profile image:
     <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload File" name="submit">
+    <input class="btn btn-default" type="submit" value="Upload File" name="submit">
 </form>
     
     
@@ -86,7 +84,7 @@ $extension_array = ['jpg', 'jpeg', 'png', 'gif'];
 }
 
 ?>
-    
+</div>    
 <?php include( 'includes/footer.php'); ?>
-
+</body>
 </html>

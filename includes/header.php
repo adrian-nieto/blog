@@ -1,21 +1,21 @@
-<div class="col-md-12">
-    <header>
-        <h1>Welcome to Adrian's Blog!</h1>
-        <ul class="col-md-12">
-            <li class="col-md-2 col-md-offset-2"><a href="index.php">Home</a>
-            </li>
-            <?php
-                if(isset($_SESSION['userinfo'])){
-                    echo "<li class='col-md-2'><a href='logout.php'>Logout</a></li>";
-                }
-                else{
-                    echo "<li class='col-md-2'><a href='login.php'>Login</a></li>";
-                }
-                ?>
-            <li class="col-md-2"><a href="registration.php">Sign Up</a>
-            </li>
-            <li class="col-md-2"><a href="createpost.php">Post</a>
-            </li>
+<header class="navbar navbar-inverse navbar-static-top">
+    <nav class='container' role='navigation'>
+        <div class='navbar-header'>
+        <a href="index.php" class='navbar-brand'>Adrian's Blog</a>
+        
+        <button type='button' class="navbar-toggle collapsed" data-toggle='collapse' data-target='.navbar-collapse'>
+            <span class='sr-only'>Toggle navigation</span>    
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+        </button>
+        </div>
+        <ul class="nav navbar-nav navbar-right navbar-collapse collapse">
+            <?php if(isset($_SESSION[ 'userinfo'])){ echo "<li><a href='createpost.php'>Post</a>
+            </li><li><a href='logout.php'>Logout</a></li>"; } else{ echo "<li><a href='login.php'>Login</a></li><li><a href='registration.php'>Sign Up</a>
+            </li>"; } ?>
+            
+            
         </ul>
-    </header>
-</div>
+    </nav>
+</header>
